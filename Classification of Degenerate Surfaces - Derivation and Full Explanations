@@ -1,0 +1,50 @@
+\subsubsection{(2,1,0)}
+ If, for any symmetric matrix $A$, two eigenvalues are positive and one is negative, i.e. $\lambda_1=\frac{1}{\alpha^2},\, \lambda_2 = \frac{1}{\beta^2},\, \lambda_3 = -\frac{1}{\gamma^2}$, Eq.\eqref{eq:standard} will form the equation of a \textit{hyperboloid of one sheet} \cite{MG} (also known as an ``asymptotic cone'' \cite{AG}),
+ \begin{equation}\label{eq:hyperboloid1}
+     \frac{x'^2}{\alpha^2} + \frac{y'^2}{\beta^2} - \frac{z'^2}{\gamma^2} = 1.
+ \end{equation}
+  Whilst a hyperboloid of one sheet will intercept the $x',y'$-axes at the points $(\pm\alpha,0,0)$ and $(0,\pm\beta,0)$, there is no intersection with the $z'$-axis; if $x'=y'=0$ within Eq.~\eqref{eq:hyperboloid1}, then $z^2=-\gamma^2$, where no real solution exists for $\gamma \in \mathbb  R$ \cite{CA}.
+
+  The sections of such a surface parallel to the $x'y'$-plane are ellipses whilst those parallel to either the $x'z'-$ and $y'z'$-planes are hyperbolas \cite{AG}. 
+ 
+  Further, the surface is not bounded but is symmetric about all coordinate planes \cite{CA}, becoming a surface of revolution if $\alpha = \beta$.
+
+  For example, for a matrix,
+  \begin{equation} \label{matrix} A =
+ \begin{pmatrix}
+     0 & 5 & -3\\
+     5 & 8 & 2\\
+     -3 & 2 & -2
+ \end{pmatrix}
+  \end{equation} with eigenvalues $-5.78491831$, $1.35965812$, $10.42526019$, we can, by applying the Reduction Theorem and Principal Axis Theorem, find the ``standard'' hyperboloid quadric form Eq.~\eqref{eq:hyperboloid1},
+  \begin{equation}\label{eq:example}
+      \frac{x'^2}{1/10.42526019} + \frac{y'^2}{1/1.35965812} - \frac{z'^2}{1/5.78491831} =1.
+  \end{equation}
+
+\subsubsection{(1,2,0)}
+Finally, if the symmetric matrix $A$, exhibited in Eq.~\eqref{eq:matrix}, has one positive ($1/{\gamma^2}$) and two negative eigenvalues ($1/{\alpha^2}$, $1/{\beta^2}$), we can rearrange Eq.~\eqref{eq:standard} so that
+\begin{equation}\label{eq:hyperboloid2}
+     \frac{x'^2}{\alpha^2} + \frac{y'^2}{\beta^2} - \frac{z'^2}{\gamma^2} = -1,
+\end{equation} a \textit{hyperboloid of two sheets} \cite{MG,AG}.
+
+ The intercepts of this hyperboloid with the $x',y',z'$-axes are the points $(0,0,\pm \gamma)$, with no intersections existing with the $x',y'$-axes, \cite{CA}.
+
+ Furthermore, in contrast to the previous quadrics, this surface has two sheets and is not bounded; this is because Eq.~\eqref{eq:hyperboloid2} implies
+ \[ \frac{z'^2}{\gamma^2} - 1 = \frac{x'^2}{\alpha^2} + \frac{y'^2}{\beta^2},\] which can only be solved if $\frac{z'^2}{\gamma^2} - 1 \geq 0$ or $|z'| \geq \gamma$ \cite{CA}. That is, whilst the sections parallel to the two principal planes are hyperbolas, the plane parallel to the $x'y'$-axes is an ellipse.
+ 
+Accordingly, if we consider
+\begin{equation}\label{matrix2}
+    A = \begin{pmatrix}
+        -2 & -4 & -9\\
+        -4 & -2 & 2\\
+        -9 & 2 & 8
+    \end{pmatrix},
+\end{equation} whereby the eigenvalues of $A$ are $-8.33688233$, $-1.84395736$ and $14.18083969$, we obtain 
+\begin{equation}\label{hyper2}
+    \frac{z'^2}{1/14.18083969} - \frac{x'^2}{1/8.33688233} - \frac{y'^2}{1.84395736} = 1
+\end{equation} from Eq.~\eqref{eq:hyperboloid2}.
+
+\subsubsection{(0,3,0)}
+If all three eigenvalues of a matrix $A$ are negative, we yield \begin{equation}
+    -\frac{x'^2}{\alpha^2}-\frac{y'^2}{\beta^2}-\frac{z'^2}{\gamma^2} = 1
+\end{equation} from Eq.~\eqref{eq:standard} where ${\lambda_1,\, \lambda_2,\, \lambda_3 =-1/\alpha^2,\,}$ ${-1/\beta^2,\, -1/\gamma^2}$ \cite{MG}. This quadric is known as an imaginary ellipsoid, and thus cannot be plotted like Figures~\eqref{fig:ellipsoid}-\eqref{fig:hyperboloid2}.
